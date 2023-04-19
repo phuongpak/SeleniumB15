@@ -1,0 +1,40 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name ="Regression Suite">
+
+    <test name ="Blaze Tests">
+
+        <parameter name="laptopBrand" value="MacBook Pro"></parameter>
+        <parameter name="laptopPrice" value="$1100 *includes tax"></parameter>
+        <parameter name="message" value="Product added"></parameter>
+        <parameter name="description" value="Apple has introduced"></parameter>
+
+        <classes>
+
+            <class name ="com.test.blaze.tests.MacBookProTest"></class>
+            <class name ="com.test.blaze.tests.OrderTest"></class>
+
+
+        </classes>
+
+    </test>
+
+    <test name="Bank Tests">
+
+        <classes>
+
+            <class name ="com.test.bank.tests.ManagerTest"></class>
+
+        </classes>
+
+
+    </test>
+
+
+
+
+
+
+
+</suite>
+
